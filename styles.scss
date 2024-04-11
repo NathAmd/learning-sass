@@ -3,6 +3,9 @@ $IconSize: 15px;
 
 body {
     background-color: rgb(10,10,10);
+
+    background-image: url("assets/Background.jpg");
+
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -16,6 +19,10 @@ body {
 }
 
 .Card:hover{
+
+    scale: 110%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+
     .ZonePhoto{
     height: 50%;
 
@@ -43,8 +50,12 @@ body {
     width: 300px;
     height: 400px;
 
+    margin-top: 5%;
 
     scale: 100%;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+
+    transition: box-shadow 1s,scale 1s;
 
     background-color: whitesmoke;
     background-image: url("assets/CardBackText.png");

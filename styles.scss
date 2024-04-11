@@ -1,0 +1,179 @@
+$varBored: solid 1px rgb(73, 73, 73);
+$IconSize: 15px;
+
+body {
+    background-color: rgb(10,10,10);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    width: 100%;
+    height: 100%;
+}
+
+.Card:hover{
+    .ZonePhoto{
+    height: 50%;
+
+    img{
+        width: 150%;
+        margin-left: -40%;
+        margin-top: -70%;
+        filter: grayscale(50%);
+    }
+    }
+
+    .TextZone #SpellHidden{
+        opacity: 1;
+    }
+}
+
+.Card {
+    overflow: hidden;
+
+
+    border-radius: 10px;
+
+    border: solid 7px rgb(255, 250, 119) ;
+
+    width: 300px;
+    height: 350px;
+
+    scale: 100%;
+
+    background-color: whitesmoke;
+    background-image: url("assets/CardBackText.png");
+
+    .ZonePhoto{
+        overflow: hidden;
+
+        margin-left: 2%;
+        width: 96%;
+
+        margin-top: 2%;
+
+        border-radius: 10px;
+
+        height: 75%;
+        transition: height 1s;
+
+        img{
+            width: 100%;
+            margin-top: -15%;
+            //margin-left: 0%;
+
+            filter: grayscale(0%);
+
+            transition: width 1s, margin-top 1s, margin-left 1s , filter 1s;
+        }
+    }
+
+    .TextZone{
+        width: 100%;
+
+        #Type{
+            position: relative;
+
+            background-color: rgba(245, 245, 245, 0.677);
+
+            width: 30%;
+            
+            padding: {
+            top: 1%;
+            bottom: 1%;
+            }
+
+            font-size: 20px;
+            font-weight: 900;
+            color: rgb(73, 73, 73);
+            text-shadow: 5px;
+            border-radius: 0px 10px 10px 0px;
+
+            border: {
+                top: $varBored;
+                right: $varBored;
+                bottom: $varBored;
+            }
+
+            text-align: center;
+
+            margin-top: -5%;
+        }
+
+        #Name {
+        font-size: 30px;
+        font-weight: 1000;
+
+        margin-top: -5%;
+        margin-left: 5%;
+        }
+
+        #SpellHidden{
+            margin-left: 5%;
+            width: 90%;
+
+            opacity: 0;
+            transition: opacity 1s;
+
+            #sh-icon{
+                text-align: left;
+            }
+            #sh-title {
+                margin-top: -12.5%;
+                text-align: center;
+
+                font-weight: 800;
+                font-size: 18px;
+            }
+            #sh-degat {
+                margin-top: -15%;
+                text-align: right;
+                font-weight: 800;
+                font-size: 18px;
+            }
+            #sh-desc {
+                text-align: justify;
+                margin-top: -5%;
+            }
+        }
+    }
+
+    .LevelZone{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+
+        //margin-top: -75%;
+
+        top: 2%;
+        left: 78%;
+
+        border: solid 2px black;
+        border-radius: 100%;
+
+        background-image: url("assets/CardBackText.png");
+
+        text-align: center;
+        font-weight: 800;
+    }
+
+    .Ress{
+        position: absolute;
+
+        top: 94%;
+        width: 75%;
+        margin-left: 12.5%;
+        height: 4.5%;
+
+        border: solid 2px rgba(120, 120, 120, 0.5);
+        background-color: rgba(164, 164, 164, 0.5);
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        p{
+            margin-top: -0.35%;
+        }
+    }
+}
